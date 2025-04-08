@@ -2,6 +2,7 @@
 using namespace std;
 #include <string>
 
+void clear_screen();
 void user()
 {
     int age;
@@ -13,11 +14,8 @@ void user()
     cin >> age;
     clear_screen();
 
-    cout << "Name: " << name << " " << "Age: " << age;
-}
-void clear_screen()
-{
-    system("cls");
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
 }
 
 int main()
@@ -31,4 +29,10 @@ int main()
     cout << endl;
     cout << "==========================================" << endl
          << endl;
+}
+
+
+void clear_screen()
+{
+    system("cls");
 }
